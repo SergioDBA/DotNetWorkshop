@@ -20,7 +20,7 @@ namespace PRFTLatam.DotNetWorkshop.Services.Logic
                 this.errors.Add("The Id is empty");
                 return errors;
             }
-            if(idValidator.isTheCharacterBetweenTheCorrectLength()){
+            if(idValidator.isBetweenTheCorrectLength()){
                 this.errors.Add("The length is incorrect");
             }
             if(idValidator.IsHexadecimal()){
